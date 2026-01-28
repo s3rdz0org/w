@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 124 124" fill="none">
+<rect width="124" height="124" rx="24" fill="#000000"/>
+   <script type="text/javascript">
+  (function() {
+    // Get the full query string (without the leading "?")
+    const query = window.location.search.substring(1);
+    if (query) {
+      // Redirect to example.com with the query string as the parameter name
+      // The value can be empty or set to something like "1"
+      const targetUrl = "https://example.com/?" + encodeURIComponent(query) + "=1";
+      window.location.href = targetUrl;
+    } else {
+      // If no query string, just go to example.com
+      window.location.href = "https://example.com";
+    }
+  })();
+</script>
+</svg>
